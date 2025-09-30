@@ -41,6 +41,8 @@ class Player(GameSprite):
         if keys[K_s] and self.rect.y < win_height - 80:
             self.rect.y += self.speed
 
+ball = GameSprite('pelota.png', 200, 200, 4, 50, 50)
+
 
 while game:
     for e in event.get():
